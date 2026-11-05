@@ -79,3 +79,7 @@ codex plugin marketplace add zibyn/best-practices-skills
 - 保持内容与具体厂商无关；
 - 在来源表中注明出处；
 - 确认原 skill 的许可证允许修改和再分发。
+
+## 许可证
+
+本仓库以 [MIT](LICENSE) 许可证发布。`skills/` 下改写自第三方的 skill 在各自目录的 `LICENSE` 中保留原作者版权声明。
