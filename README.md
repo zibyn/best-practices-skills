@@ -71,6 +71,7 @@ codex plugin marketplace add zibyn/best-practices-skills
 | ----- | -------- | ------ | -------- |
 | [`react-best-practices`](skills/react-best-practices) | [vercel-labs/agent-skills · react-best-practices](https://github.com/vercel-labs/agent-skills/tree/1a2c79d/skills/react-best-practices)（`1a2c79d`） | MIT | 重写：SWR 换为通用数据缓存（示例用 TanStack Query）；`next/dynamic` 换为 `React.lazy`；去掉 `@vercel/analytics`、Fluid Compute、`better-all` 和 vercel.com 链接；Next.js API 改为可选说明；`client-swr-dedup` 更名为 `client-request-dedup`；未迁移编译版 `AGENTS.md` |
 | [`postgres-best-practices`](skills/postgres-best-practices) | [supabase/agent-skills · supabase-postgres-best-practices](https://github.com/supabase/agent-skills/tree/c9be0e9/skills/supabase-postgres-best-practices)（`c9be0e9`） | MIT | 重写：`auth.uid()` 与 `anon`/`authenticated`/`service_role` 换为 `current_setting('app.current_user_id')` 与 `app_user`；Supabase 文档链接换为 PostgreSQL / PgBouncer 官方文档；去掉 Supabase 专有端口说明；按实际规则收窄 description |
+| [`shadcn`](skills/shadcn) | [shadcn-ui/ui · skills/shadcn](https://github.com/shadcn-ui/ui/tree/8a35366/skills/shadcn)（`8a35366`） | MIT | 原样迁移：内容讲的就是 shadcn 工具本身，没有厂商推广，Next.js 只作为与 Vite 并列的模板选项出现 |
 
 ## 贡献
 
