@@ -1,0 +1,12 @@
+{
+  "name": "best-practices-skills",
+  "description": "Brand-neutral best-practice skills for frameworks and dev infrastructure.",
+  "owner": { "name": "zibyn" },
+  "plugins": [
+    {
+      "name": "best-practices-skills",
+      "source": "./",
+      "description": "Brand-neutral best-practice skills for frameworks and dev infrastructure."
+    }
+  ]
+}

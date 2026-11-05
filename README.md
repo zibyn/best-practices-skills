@@ -36,12 +36,22 @@ skills/
 
 ### Codex
 
-把仓库作为插件安装，或直接把需要的 skill 复制到 Codex 的 skills 目录：
-
 ```bash
-git clone https://github.com/zibyn/best-practices-skills.git
-cp -r best-practices-skills/skills/<skill-name> ~/.codex/skills/
+codex plugin marketplace add zibyn/best-practices-skills
 ```
+
+然后在 Plugins Directory 中选择 `best-practices-skills` 市场并安装插件。
+
+### 插件清单
+
+| 文件 | 用途 |
+| ---- | ---- |
+| `.claude-plugin/plugin.json` | Claude Code 插件清单 |
+| `.claude-plugin/marketplace.json` | Claude Code 市场 |
+| `plugin.json` | Codex 插件清单（可移植格式） |
+| `.agents/plugins/marketplace.json` | Codex 市场 |
+
+发布新版本时同步更新两个 `plugin.json` 中的 `version`。
 
 ## 迁移与合并 skill
 
@@ -59,7 +69,8 @@ cp -r best-practices-skills/skills/<skill-name> ~/.codex/skills/
 
 | Skill | 原始来源 | 许可证 | 处理方式 |
 | ----- | -------- | ------ | -------- |
-| _暂无_ | | | |
+| [`react-best-practices`](skills/react-best-practices) | [vercel-labs/agent-skills · react-best-practices](https://github.com/vercel-labs/agent-skills/tree/1a2c79d/skills/react-best-practices)（`1a2c79d`） | MIT | 重写：SWR 换为通用数据缓存（示例用 TanStack Query）；`next/dynamic` 换为 `React.lazy`；去掉 `@vercel/analytics`、Fluid Compute、`better-all` 和 vercel.com 链接；Next.js API 改为可选说明；`client-swr-dedup` 更名为 `client-request-dedup`；未迁移编译版 `AGENTS.md` |
+| [`postgres-best-practices`](skills/postgres-best-practices) | [supabase/agent-skills · supabase-postgres-best-practices](https://github.com/supabase/agent-skills/tree/c9be0e9/skills/supabase-postgres-best-practices)（`c9be0e9`） | MIT | 重写：`auth.uid()` 与 `anon`/`authenticated`/`service_role` 换为 `current_setting('app.current_user_id')` 与 `app_user`；Supabase 文档链接换为 PostgreSQL / PgBouncer 官方文档；去掉 Supabase 专有端口说明；按实际规则收窄 description |
 
 ## 贡献
 
