@@ -2,6 +2,9 @@
   "name": "best-practices-skills",
   "version": "0.1.0",
   "description": "Brand-neutral best-practice skills for frameworks and dev infrastructure.",
-  "author": { "name": "zibyn" },
-  "repository": "https://github.com/zibyn/best-practices-skills"
+  "author": {
+    "name": "zibyn"
+  },
+  "repository": "https://github.com/zibyn/best-practices-skills",
+  "license": "MIT"
 }
